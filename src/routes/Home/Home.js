@@ -13,6 +13,7 @@ import partner9 from '../../images/partner9.png';
 import thumb1 from '../../images/thumb1.jpg';
 import thumb2 from '../../images/thumb2.jpg';
 import thumb3 from '../../images/thumb3.jpg';
+import {ArrowNarrowRightIcon} from '@heroicons/react/outline';
 
 const Home = () => {
     return (
@@ -24,22 +25,23 @@ const Home = () => {
                 <span>advice</span>
                 <h2>Smart</h2>
                 <span>strategies</span>
-                <Link to={'/about'}><button className='btn btn-success w-25 mx-auto rounded-pill mt-5'>Learn more</button></Link>
+                <Link to={'/about'}><button className='btn btn-success w-25 mx-auto rounded-pill mt-5'>Learn more
+                    <ArrowNarrowRightIcon style={{height: '1.5rem', marginLeft: '5px'}}></ArrowNarrowRightIcon></button></Link>
             </section>
             <section className='container mx-auto my-5'>
                 {/* partners */}
                 <div>
                     <h2 className='common-header'># <span>My Partners</span></h2>
                     <div className='mt-4 partner'>
-                        <img src={partner1} alt="partner-1" className='' />
-                        <img src={partner2} alt="partner-2" className='' />
-                        <img src={partner3} alt="partner-3" className='' />
-                        <img src={partner4} alt="partner-4" className='' />
-                        <img src={partner5} alt="partner-5" className='' />
-                        <img src={partner6} alt="partner-6" className='' />
-                        <img src={partner7} alt="partner-7" className='' />
-                        <img src={partner8} alt="partner-8" className='' />
-                        <img src={partner9} alt="partner-9" className='' />
+                        <img src={partner1} alt="partner-1" className='m-auto' />
+                        <img src={partner2} alt="partner-2" className='m-auto' />
+                        <img src={partner3} alt="partner-3" className='m-auto' />
+                        <img src={partner4} alt="partner-4" className='m-auto' />
+                        <img src={partner5} alt="partner-5" className='m-auto' />
+                        <img src={partner6} alt="partner-6" className='m-auto' />
+                        <img src={partner7} alt="partner-7" className='m-auto' />
+                        <img src={partner8} alt="partner-8" className='m-auto' />
+                        <img src={partner9} alt="partner-9" className='m-auto' />
                     </div>
                 </div>
                 {/* commitment */}

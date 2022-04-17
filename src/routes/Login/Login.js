@@ -90,7 +90,10 @@ const Login = () => {
                         </span></p>
                     </div>
                     <p className='alternative mt-4'>or</p>
-                    <button className='btn btn-primary w-100 mt-2' onClick={() => signInWithFacebook()}>Login with facebook</button>
+                    <button className='btn btn-primary w-100 mt-2' onClick={() => signInWithFacebook()}>
+                        <i className="fa fa-facebook me-2" aria-hidden="true"></i>
+                        Login with facebook
+                    </button>
                 </div>
             </div>
         </>
