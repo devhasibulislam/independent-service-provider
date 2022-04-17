@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithFacebook } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Login.css';
 
@@ -14,6 +14,12 @@ const Login = () => {
         loading,
         error
     ] = useSignInWithEmailAndPassword(auth);
+    const [
+        signInWithFacebook,
+        fbUser,
+        fbLoading,
+        fbError
+    ] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/'
@@ -22,9 +28,25 @@ const Login = () => {
         navigate(from, {replace: true});
     }
 
+    if (fbUser) {
+        navigate(from, {replace: true});
+    }
+
     if (loading) {
         return <div>
             <p className='text-info'>Loading...</p>
+        </div>
+    }
+
+    if (fbLoading) {
+        return <div>
+            <p className='text-info'>Loading...</p>
+        </div>
+    }
+
+    if (fbError) {
+        return <div>
+            <p>{fbError.message}</p>
         </div>
     }
 
@@ -39,6 +61,7 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
         // console.log(user);
     };
+
     return (
         <>
             <div className='w-100  vh-100 login-form  d-flex align-items-center '>
@@ -48,11 +71,11 @@ const Login = () => {
                     <h2 className='text-center display-1 text-white'>Login Page!</h2>
                     <Form className='form-container' onSubmit={handleSubmitLoginForm}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="Enter email" onChange={event => setEmail(event.target.value)} />
+                            <Form.Control type="email" placeholder="Enter email" onChange={event => setEmail(event.target.value)} required />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} />
+                            <Form.Control type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} required />
                         </Form.Group>
                         <input type="submit" value="Login" />
                         {loading && <p className='text-success fw-bold'>Loading...</p>}
@@ -66,7 +89,8 @@ const Login = () => {
                             <Link to={'/register'} className='text-info fw-bold'>create one</Link>
                         </span></p>
                     </div>
-
+                    <p className='alternative mt-4'>or</p>
+                    <button className='btn btn-primary w-100 mt-2' onClick={() => signInWithFacebook()}>Login with facebook</button>
                 </div>
             </div>
         </>
