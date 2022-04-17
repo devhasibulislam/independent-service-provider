@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Antic Slab',
+  serif;
 }
 
 .App-logo {
