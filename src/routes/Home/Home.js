@@ -69,13 +69,13 @@ const Home = () => {
                         <Link to={'/checkout'}><button className='btn btn-success'>Add service</button></Link>
                     </div>
                     <div className='p-3 bg-light rounded'>
-                        <img src={thumb1} alt="thumbnail-1" className='mw-100'/>
+                        <img src={thumb2} alt="thumbnail-1" className='mw-100'/>
                         <h3 className='mt-3'>Civil Cases</h3>
                         <p className='text-muted'>Civil cases involve conflicts between people or institutions such as businesses, typically over money.Civil cases include lawsuits for money, landlord/tenant matters, breach of contract claims, and cases where one person is trying to make someone else do something (for example, sell some property) or stop doing something (for example, stop a foreclosure).</p>
                         <Link to={'/checkout'}><button className='btn btn-success'>Add service</button></Link>
                     </div>
                     <div className='ms-1 p-3'>
-                        <img src={thumb2} alt="thumbnail-2" className='mw-100'/>
+                        <img src={thumb1} alt="thumbnail-2" className='mw-100'/>
                         <h3 className='mt-3'>Family Cases</h3>
                         <p className='text-muted'>Family cases are a type of civil case, but they generally involve issues between or concerning spouses, parents, and children.Family courts handle a wide variety of cases involving domestic matters.The most common issues handled at family court include. Schedule your consultation online today - all in one step.  There's no need to wait for a call back, or to find out available dates.</p>
                         <Link to={'/checkout'}><button className='btn btn-success'>Add service</button></Link>
