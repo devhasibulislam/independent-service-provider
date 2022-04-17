@@ -1,0 +1,57 @@
+.login-form {
+    position: relative;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.form-container input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: orange;
+}
+
+.form-container input[type="submit"]:hover {
+    background: rgba(239, 168, 35, 0.673);
+    color: white;
+}
+
+.login-box {
+    max-width: 500px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    border-radius: 10px;
+
+
+}
