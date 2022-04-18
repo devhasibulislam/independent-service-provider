@@ -25,7 +25,8 @@ const Login = () => {
     const from = location.state?.from?.pathname || '/'
 
     if (user) {
-        navigate(from, {replace: true});
+        console.log(user.user);
+        navigate(from, { replace: true });
     }
 
     if (fbUser) {

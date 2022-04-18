@@ -16,5 +16,11 @@
         "sname": "Family Cases",
         "sdesc": "Family cases are a type of civil case, but they generally involve issues between or concerning spouses, parents, and children.Family courts handle a wide variety of cases involving domestic matters.The most common issues handled at family court include. Schedule your consultation online today - all in one step.  There's no need to wait for a call back, or to find out available dates.",
         "simg": "simg/thumb1.jpg"
+    },
+    {
+        "sid": 4,
+        "sname": "Bankruptcy Case",
+        "sdesc": "An appeal of a ruling by a bankruptcy judge may be taken to the district court. Several courts of appeals, however, have established a bankruptcy appellate panel consisting of three bankruptcy judges to hear appeals directly from the bankruptcy courts. In either situation, the party that loses in the initial bankruptcy appeal may then appeal to the court of appeals.",
+        "simg": "simg/thumb4.jpg"
     }
 ]

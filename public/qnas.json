@@ -2,16 +2,16 @@
     {
         "id": 1,
         "question": "Difference between authentication and authorization",
-        "answer": "abcd"
+        "answer": "Authentication confirm user who say who they are. Authentication verify credentials. Authentication is visible to user. Authentication partially changed to user. Authentication's data moved through ID tokens. Authorization gives users permission to access a resource. Authorization grants or denies permission. Authorization is not visible to user. Authorization is not changeable by user. Authorization data moves through access tokens."
     },
     {
         "id": 2,
         "question": " Why are you using firebase? What other options do you have to implement authentication?",
-        "answer": "abcd"
+        "answer": "First of all it reduces development workload and time. It helps us to not creating a scratch database for login and registration info. As it' full-fledged therefore it's quite secure through google powered. It support dynamic tasks like: update, reset, login, registration e.t.c. Mostly it let's developer keep their web application to the cloud with proper safety. Gives consistent advantage in hosting and authentication."
     },
     {
         "id": 3,
-        "question": "What other services does firebase provide other than authentication",
-        "answer": "abcd"
+        "question": "What other services does firebase provide other than authentication?",
+        "answer": "Firebase helps develop high-end quality web applications and host in web through google's provider too. It helps us in other services too other than authentication. Hosting which already mentioned is one of them. Cloud storage which also helps us to keep our web file directly to the cloud. Also let us to access google analytics. Also gives facilities like cloud messaging and dynamic links. Mostly gives a huge affordability to change web ui remotely through remote config."
     }
 ]
