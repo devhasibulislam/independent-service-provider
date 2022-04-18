@@ -4,6 +4,7 @@ import { Form } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -45,6 +46,11 @@ const Register = () => {
                         </Form.Group>
                         <input type="submit" value="Reset" />
                     </Form>
+                <div>
+                    <p className='text-white text-center'>Change password? Now <span role="button">
+                        <Link to={'/login'} className='text-info fw-bold'>Login</Link>
+                    </span></p>
+                </div>
                 </div>
                 <ToastContainer />
             </div>
