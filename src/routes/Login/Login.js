@@ -33,18 +33,6 @@ const Login = () => {
         navigate(from, {replace: true});
     }
 
-    if (fbLoading) {
-        return <div>
-            <p className='text-info'>Loading...</p>
-        </div>
-    }
-
-    if (fbError) {
-        return <div>
-            <p>{fbError.message}</p>
-        </div>
-    }
-
     const handleSubmitLoginForm = async (event) => {
         event.preventDefault();
         await signInWithEmailAndPassword(email, password);
@@ -79,10 +67,12 @@ const Login = () => {
                         </span></p>
                     </div>
                     <p className='alternative mt-4'>or</p>
-                    <button className='btn btn-primary w-100 mt-2' onClick={() => signInWithFacebook()}>
+                    <button className='btn btn-primary w-100 my-2' onClick={() => signInWithFacebook()}>
                         <i className="fa fa-facebook me-2" aria-hidden="true"></i>
                         Login with facebook
                     </button>
+                    {fbLoading && <p className='text-success fw-bold'>Loading...</p>}
+                    {fbError && <p className='text-danger fw-bold'>{fbError.message}</p>}
                 </div>
             </div>
         </>
