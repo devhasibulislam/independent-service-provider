@@ -6,7 +6,7 @@ const ServiceDetail = () => {
     return (
         <div className='my-5 container mx-auto'>
             <h2>This is ServiceDetail component: {serviceId}</h2>
-            <Link to={'/checkout'}><button className='btn btn-success'>Proceed to checkout</button></Link>
+            <Link to={'/checkout'}><button className='btn btn-success mt-3'>Proceed to checkout</button></Link>
         </div>
     );
 };

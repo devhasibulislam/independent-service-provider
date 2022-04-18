@@ -9,24 +9,24 @@ const About = () => {
                 <h1 className='display-1'>About <br /> Me</h1>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur quam autem tenetur adipisci alias, dignissimos ut fugiat sunt similique sed iste tempore suscipit ipsum animi debitis voluptatum qui est!
+                        I want to build a JavaScript library like: React, Vue or Angular e.t.c. As a web developer, my core ambition is now make other developers life easy and flow less so that they can envoy with their own joy and make other happy. Even want to create top level site which can breakthrough others but contribution able interest. Contentional website is my target which I can refill soon. I'm aware about it.
                     </p>
                     {
                         readMore
                             ?
-                            <button className='btn btn-primary' onClick={() => setReadMore(!readMore)}>Read less</button>
+                            <button className='btn btn-success' onClick={() => setReadMore(!readMore)}>Read less</button>
                             :
-                            <button className='btn btn-primary' onClick={() => setReadMore(!readMore)}>Read more</button>
+                            <button className='btn btn-success' onClick={() => setReadMore(!readMore)}>Read more</button>
                     }
                     {
                         readMore
                             ?
                             <ol className='mt-3 ps-3'>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, fuga.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, ipsum?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem?</li>
+                                <li>Stay persistance with my goal</li>
+                                <li>Convenience studiedly strategy</li>
+                                <li>Turn leisure time in convention which is ultimatum to acheive my goal</li>
+                                <li>Never give up prodigy</li>
+                                <li>Listen more knowledgeable person than me</li>
                             </ol>
                             :
                             ''
