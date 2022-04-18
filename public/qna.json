@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "Difference between authentication and authorization",
+        "answer": "abcd"
+    },
+    {
+        "id": 2,
+        "question": " Why are you using firebase? What other options do you have to implement authentication?",
+        "answer": "abcd"
+    },
+    {
+        "id": 3,
+        "question": "What other services does firebase provide other than authentication",
+        "answer": "abcd"
+    }
+]
