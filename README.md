@@ -26,3 +26,5 @@ Live site link: [Click here](https://independent-service-prov-5e182.web.app/)
 6. All the paragraphs are practical
 7. Facebook as social authentication 
 8. Email and Phone number as partial authentication but initial target also
+    * sent email verification
+    * reset password also works as well as
