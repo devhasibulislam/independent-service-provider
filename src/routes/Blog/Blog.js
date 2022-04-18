@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from 'react';
 import QNACards from '../../components/QNACards/QNACards';
+import useQNAs from '../../hooks/useQNAs';
 
 const Blog = () => {
-    const [qna, setqna] = useState([]);
-    useEffect(() => {
-        fetch('qna.json')
-            .then(request => request.json())
-            .then(response => setqna(response))
-    }, [])
+    const [qnas] = useQNAs();
     return (
         <section className='container mx-auto'>
             <div className="row gap-3">
                 {
-                    qna.map(q => <QNACards
-                        key={q.id}
-                        q={q}
+                    qnas.slice(0, 3).map(qna => <QNACards
+                        key={qna.id}
+                        q={qna}
                     ></QNACards>)
                 }
             </div>

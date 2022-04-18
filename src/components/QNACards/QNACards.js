@@ -11,9 +11,9 @@ const QNACards = ({ q }) => {
                 {
                     expand
                     ?
-                    <button className='btn btn-success mb-3' onClick={() => setExpand(!expand)}>Hide answer <ArrowUpIcon /></button>
+                    <button className='btn btn-success mb-3' onClick={() => setExpand(!expand)}>Hide answer <ArrowUpIcon style={{height: '15px'}} /></button>
                     :
-                    <button className='btn btn-success mb-3' onClick={() => setExpand(!expand)}>See answer <ArrowDownIcon /></button>
+                        <button className='btn btn-success mb-3' onClick={() => setExpand(!expand)}>See answer <ArrowDownIcon style={{ height: '15px' }} /></button>
                 }
                 {expand ? <p>{answer}</p> : ''}
             </div>
