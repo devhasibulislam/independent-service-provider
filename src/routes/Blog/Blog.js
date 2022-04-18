@@ -46,7 +46,7 @@ const Blog = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <div className="row gap-3 container mx-auto">
+            <div className="gap-3 container mx-auto d-flex flex-column my-5">
                 {
                     qnas.slice(0, 3).map(qna => <QNACards
                         key={qna.id}

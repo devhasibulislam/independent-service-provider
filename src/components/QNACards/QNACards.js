@@ -5,7 +5,7 @@ const QNACards = ({ q }) => {
     const { question, answer } = q;
     const [expand, setExpand] = useState(false);
     return (
-        <div className='col d-flex flex-column justify-content-between my-5 bg-light p-3 rounded'>
+        <div className='d-flex flex-column justify-content-between bg-light p-3 rounded'>
             <h2>{question}</h2>
             <div className='mt-3'>
                 {
