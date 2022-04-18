@@ -4,14 +4,20 @@ import myself from '../../images/myself.png';
 const About = () => {
     const [readMore, setReadMore] = useState(false);
     return (
-        <div className='d-flex justify-content-between align-items-center container mx-auto my-5'>
+        <div className='d-flex justify-content-between container mx-auto my-5'>
             <div className='px-5'>
                 <h1 className='display-1'>About <br /> Me</h1>
                 <article>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur quam autem tenetur adipisci alias, dignissimos ut fugiat sunt similique sed iste tempore suscipit ipsum animi debitis voluptatum qui est!
                     </p>
-                    <button className='btn btn-primary' onClick={() => setReadMore(!readMore)}>Read more</button>
+                    {
+                        readMore
+                            ?
+                            <button className='btn btn-primary' onClick={() => setReadMore(!readMore)}>Read less</button>
+                            :
+                            <button className='btn btn-primary' onClick={() => setReadMore(!readMore)}>Read more</button>
+                    }
                     {
                         readMore
                             ?

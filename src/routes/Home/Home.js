@@ -13,7 +13,7 @@ import partner9 from '../../images/partner9.png';
 import thumb1 from '../../images/thumb1.jpg';
 import thumb2 from '../../images/thumb2.jpg';
 import thumb3 from '../../images/thumb3.jpg';
-import {ArrowNarrowRightIcon} from '@heroicons/react/outline';
+import { ArrowDownIcon } from '@heroicons/react/outline';
 
 const Home = () => {
     return (
@@ -25,13 +25,13 @@ const Home = () => {
                 <span>advice</span>
                 <h2>Smart</h2>
                 <span>strategies</span>
-                <Link to={'/about'}><button className='btn btn-success w-25 mx-auto rounded-pill mt-5'>Learn more
-                    <ArrowNarrowRightIcon style={{height: '1.5rem', marginLeft: '5px'}}></ArrowNarrowRightIcon></button></Link>
+                <a href="#partners"><button className='btn btn-success w-25 mx-auto rounded-pill mt-5'>Scroll Down
+                    <ArrowDownIcon style={{ height: '1.5rem', marginLeft: '5px' }}></ArrowDownIcon></button></a>
             </section>
             <section className='container mx-auto my-5'>
                 {/* partners */}
                 <div>
-                    <h2 className='common-header'># <span>My Partners</span></h2>
+                    <h2 className='common-header' id='partners'># <span>My Partners</span></h2>
                     <div className='mt-4 partner'>
                         <img src={partner1} alt="partner-1" className='m-auto' />
                         <img src={partner2} alt="partner-2" className='m-auto' />
