@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Checkout = () => {
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
+        event.preventDefault();
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
-            event.preventDefault();
             event.stopPropagation();
+        } else {
+            toast('thank you for proceeding');
         }
 
         setValidated(true);
@@ -43,6 +47,17 @@ const Checkout = () => {
                     Proceed to checked
                 </Button>
             </Form>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 };
