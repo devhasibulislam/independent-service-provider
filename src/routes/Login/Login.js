@@ -33,12 +33,6 @@ const Login = () => {
         navigate(from, {replace: true});
     }
 
-    if (loading) {
-        return <div>
-            <p className='text-info'>Loading...</p>
-        </div>
-    }
-
     if (fbLoading) {
         return <div>
             <p className='text-info'>Loading...</p>
@@ -48,12 +42,6 @@ const Login = () => {
     if (fbError) {
         return <div>
             <p>{fbError.message}</p>
-        </div>
-    }
-
-    if (error) {
-        return <div>
-            <p>{error.message}</p>
         </div>
     }
 
