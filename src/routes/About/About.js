@@ -4,8 +4,8 @@ import myself from '../../images/myself.png';
 const About = () => {
     const [readMore, setReadMore] = useState(false);
     return (
-        <div className='d-flex justify-content-between container mx-auto my-5'>
-            <div className='px-5'>
+        <div className='d-flex justify-content-between align-items-center flex-lg-row flex-column container mx-auto my-5'>
+            <div className='px-5 w-100'>
                 <h1 className='display-1'>About <br /> Me</h1>
                 <article>
                     <p>
@@ -33,7 +33,7 @@ const About = () => {
                     }
                 </article>
             </div>
-            <div>
+            <div className='w-100'>
                 <img src={myself} alt="myself" className='mw-100 w-100' />
             </div>
         </div>
